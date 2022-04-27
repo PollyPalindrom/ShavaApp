@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.fullScreen.FullScreenFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/recipe"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/image"
+        app:layout_constraintBottom_toTopOf="@id/firstCheckBox"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:maxWidth="170dp"
+        android:maxHeight="170dp" />
+
+    <CheckBox
+        android:id="@+id/firstCheckBox"
+        app:layout_constraintBottom_toTopOf="@id/secondCheckBox"
+        app:layout_constraintTop_toBottomOf="@id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cheese lavash" />
+
+    <CheckBox
+        android:id="@+id/secondCheckBox"
+        app:layout_constraintBottom_toTopOf="@id/thirdCheckBox"
+        app:layout_constraintTop_toBottomOf="@id/firstCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chile pepper" />
+
+    <CheckBox
+        android:id="@+id/thirdCheckBox"
+        app:layout_constraintBottom_toTopOf="@id/scroll"
+        app:layout_constraintTop_toBottomOf="@id/secondCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cucumbers" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        app:layout_constraintBottom_toTopOf="@id/add"
+        app:layout_constraintTop_toBottomOf="@id/thirdCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_to_cart" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "705296565965",
+    "project_id": "test-4c0c2",
+    "storage_bucket": "test-4c0c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705296565965:android:72e1d2c508612a436e4b84",
+        "android_client_info": {
+          "package_name": "com.example.shavaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705296565965-hq91njn6kpnudsufq7uil89pqcg9hspj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB388HJe1INv1d9cpzW187wwqYdswEk8u8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "705296565965-hq91njn6kpnudsufq7uil89pqcg9hspj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">FoodShop</string>
+
+    <string name="menu">Menu</string>
+    <string name="offers">Offers</string>
+    <string name="cart">Cart</string>
+    <string name="coupons">Coupons</string>
+    <string name="account">Account</string>
+    <string name="add_cart">Add to cart</string>
+    <string name="add_to_cart">ADD TO CART</string>
+    <string name="recipe">Recipe</string>
+    <string name="emptyPhoneNumber">(No phone number)</string>
+    <string name="unknownName">Unknown</string>
+    <string name="offer">Offer</string>
+    <string name="description">description</string>
+    <string name="order">Order</string>
+    <string name="name">Name</string>
+    <string name="number">Number</string>
+    <string name="orderHistory">Order history</string>
+</resources>
